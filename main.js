@@ -1,14 +1,17 @@
 
-
+let titel = document.getElementById("titel");
+let price = document.getElementById("price");
+let textes = document.getElementById("textes");
+let ads = document.getElementById("ads");
+let total = document.getElementById("total");
+let count = document.getElementById("count");
+let category = document.getElementById("category");
+let sumbit = document.getElementById("sumbit");
 /*
-// let titel = document.getElementById("titel");
-// let price = document.getElementById("price");
-// let textes = document.getElementById("textes");
-// let ads = document.getElementById("ads");
-// let total = document.getElementById("total");
-// let count = document.getElementById("count");
-// let category = document.getElementById("category");
-// let sumbit = document.getElementById("sumbit");
+// 
+// 
+// 
+
 // let discount = document.getElementById("discount");
 // let mood = "create";
 // let temp;
