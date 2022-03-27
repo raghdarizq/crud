@@ -7,11 +7,18 @@ let total = document.getElementById("total");
 let count = document.getElementById("count");
 let category = document.getElementById("category");
 let sumbit = document.getElementById("sumbit");
-/*
-// 
-// 
-// 
+function gettotal(){
+  if (price.value != "") {
+        let result =( +price.value + +textes.value + +ads.value) - +discount.value;
+        total.innerHTML = result;
+        total.style.background = "#040";
+      } else {
+        total.innerHTML = "";
+        total.style.background = "red";
+      }
+}
 
+/*
 // let discount = document.getElementById("discount");
 // let mood = "create";
 // let temp;
