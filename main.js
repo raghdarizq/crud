@@ -18,6 +18,29 @@ function gettotal(){
       }
 }
 
+let datapro;
+if(localStorage.Product != null){
+  datapro=JSON.parse(localStorage.Product)
+}
+else{
+  datapro=[];
+}
+sumbit.onclick = function () {
+    let newpro = {
+      titel: titel.value,
+      price: price.value,
+      textes: textes.value,
+      ads: ads.value,
+      discount: discount.value,
+      total: total.innerHTML,
+      count: count.value,
+      category: category.value,
+    };
+    datapro.push(newpro);
+    localStorage.setItem("Product", JSON.stringify(datapro));
+    
+  };
+  console.log("j")
 /*
 // let discount = document.getElementById("discount");
 // let mood = "create";
